@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "outDir": "dist",
+    "strict": true,
+    "jsx": "react-jsx"
+  },
+  "include": ["src"]
+}
