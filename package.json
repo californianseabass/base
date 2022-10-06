@@ -4,7 +4,9 @@
   "packageManager": "yarn@3.2.3",
   "private": true,
   "type": "module",
-  "sideEffects": false,
+  "sideEffects":  [
+    "./src/**/*.css"
+  ],
   "scripts": {
     "build": "webpack --config webpack.prod.mjs",
     "compile": "babel src --out-dir build --extensions '.ts'",
@@ -17,9 +19,14 @@
     "@babel/preset-react": "^7.18.6",
     "@babel/preset-typescript": "^7.18.6",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.7",
+    "autoprefixer": "^10.4.12",
     "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
     "fork-ts-checker-webpack-plugin": "^7.2.13",
+    "postcss": "^8.4.17",
+    "postcss-loader": "^7.0.1",
     "react-refresh": "^0.14.0",
+    "style-loader": "^3.3.1",
     "ts-standard": "^11.0.0",
     "typescript": "^4.8.2",
     "webpack": "^5.74.0",
